@@ -1,4 +1,8 @@
-import { techStacks, techClassName } from "../../assets/techStack";
+import {
+  techStacks,
+  techClassName,
+  automationTechs,
+} from "../assets/techStack";
 
 const TechStack = () => {
   return (
@@ -17,7 +21,7 @@ const TechStack = () => {
           ThaiHa.Dao@seamk.fi
         </a>
         <span className="text-[16px]">Location: Finland</span>
-        <span className="text-[16px]">GMT: +3</span>
+        <span className="text-[16px]">GMT+03:00</span>
         <div className="flex gap-4 mt-2">
           <a
             href="https://linkedin.com/in/ha-dao-6a53a2337"
@@ -38,9 +42,22 @@ const TechStack = () => {
 
       {/* Tech Stack */}
       <div className="w-full max-w-[90%]">
-        <h3 className="text-lg font-semibold text-white mb-3">Tech Stack</h3>
-        <ul className="flex flex-wrap justify-start gap-2">
+        <h3 className="text-lg font-semibold text-white mb-3">
+          Main Tech Stack
+        </h3>
+        <ul className="flex flex-wrap justify-start gap-2 mb-4">
           {techStacks.map((tech, index) => (
+            <li key={index} className={techClassName}>
+              {tech}
+            </li>
+          ))}
+        </ul>
+
+        <h3 className="text-lg font-semibold text-white my-3 border-t-2 border-amber-400 pt-3">
+          Other Engineering Basics
+        </h3>
+        <ul className="flex flex-wrap justify-start gap-2 mb-4">
+          {automationTechs.map((tech, index) => (
             <li key={index} className={techClassName}>
               {tech}
             </li>

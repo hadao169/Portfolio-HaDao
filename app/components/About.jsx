@@ -1,4 +1,4 @@
-import { techStacks, techClassName } from "../../assets/techStack";
+import { techStacks, techClassName } from "../assets/techStack";
 
 const About = () => {
   return (
@@ -11,8 +11,8 @@ const About = () => {
           className="w-60 h-60 md:h-88 rounded-full md:rounded-2xl object-cover shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out"
         />
 
-        <div className="flex flex-col gap-4 text-white w-full z-20">
-          <h1 className="text-3xl font-semibold text-center md:text-left">
+        <div className="flex flex-col items-center md:items-start gap-4 text-white w-full z-20">
+          <h1 className="text-4xl font-semibold text-center md:text-left">
             About Me
           </h1>
           <p className="text-[16px] md:text-[18px] text-center md:text-left">
@@ -26,6 +26,13 @@ const About = () => {
             learn from experienced developers and grow my coding skills while
             applying my engineering background.
           </p>
+
+          <a
+            href="/Ha_Dao_Resume.pdf"
+            className="w-38 px-4 py-[10px] bg-btn text-white rounded-2xl hover:bg-amber-400 hover:opacity-80 transition-transform duration-300 hover:scale-105 inline-flex items-center gap-2 text-[16px] md:text-[18px]"
+            download>
+            My resume <i className="bx bx-download text-2xl"></i>
+          </a>
         </div>
       </div>
 

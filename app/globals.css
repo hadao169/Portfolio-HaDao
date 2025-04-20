@@ -19,7 +19,6 @@
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
   font-family: 'Outfit', 'Ovo', 'sans-serif';
   background: #161513;
@@ -45,7 +44,7 @@ body {
 }
 
 .project-img:hover{
-  border: 3px solid #ff00ff;
+  border: 3px solid #ff0095;
   border-radius: 10px;
   filter: brightness(1.1);
   transition: filter 0.3s ease-in-out;
@@ -62,4 +61,53 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.social-icon{
+  border: 2px solid rgba(255, 255, 255, 0.938);
+}
+
+.social-icon:hover{
+  background-color: rgb(230, 228, 227);
+}
+
+body::after {
+  content: "xs";
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: red;
+  color: white;
+  padding: 5px;
+  z-index: 9999;
+}
+
+@media (min-width: 640px) {
+  body::after {
+    content: "sm";
+  }
+}
+
+@media (min-width: 768px) {
+  body::after {
+    content: "md";
+  }
+}
+
+@media (min-width: 1024px) {
+  body::after {
+    content: "lg";
+  }
+}
+
+@media (min-width: 1280px) {
+  body::after {
+    content: "xl";
+  }
+}
+
+@media (min-width: 1536px) {
+  body::after {
+    content: "2xl";
+  }
 }

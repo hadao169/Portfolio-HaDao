@@ -1,25 +1,31 @@
+"use client";
+import { use, useEffect, useState } from "react";
+// Components
 import Navbar from "./components/Navbar";
 import Header from "./components/sections/Header";
 import About from "./components/About";
 import TechStack from "./components/TechStack";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
+import Certificates from "./components/Certificate";
+import Footer from "./components/sections/Footer";
 
 export default function Home() {
   return (
-    <div className="scroll-smooth">
+    <div>
       {/* Navbar and Header */}
       <div>
-        <Navbar/>
+        <Navbar />
         <Header />
       </div>
 
       {/* Main Content */}
       <div className="main w-full flex flex-col lg:flex-row lg:px-[8%]">
         {/* Left Section - About + Projects */}
-        <div className="left-section flex flex-col w-full lg:w-2/3 items-start justify-start gap-10 py-10 pl-10 pr-6 md:pl-15 z-30">
+        <div className="left-section flex flex-col lg:w-2/3 items-start justify-start gap-10 py-20 xl:pl-25 px-6 z-30  ">
           <About />
           <Projects />
+          <Certificates />
         </div>
 
         {/* Right Section - Tech Stack + Education */}
@@ -28,6 +34,7 @@ export default function Home() {
           <Education />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
