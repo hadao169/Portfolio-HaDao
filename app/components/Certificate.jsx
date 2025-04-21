@@ -23,7 +23,7 @@ const Certificates = () => {
                 className="text-xl font-bold hover:text-blue-500 duration-300">
                 {certificate.name}
               </a>
-              <i className="bx bx-left-arrow-alt"> Click there</i>
+              <i className="bx bx-left-arrow-alt">Click there</i>
             </div>
           </div>
         ))}

@@ -1,12 +1,9 @@
 "use client";
-import { useState } from "react";
+import contactLinks from "@/app/assets/contactLink";
 
 const Footer = () => {
-  const [result, setResult] = useState("");
-
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
     const formData = new FormData(event.target);
 
     formData.append("access_key", "5e92a25b-0edc-4b7e-8848-d62f4597fb4a");
@@ -19,11 +16,11 @@ const Footer = () => {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      console.log("Success! Data:");
+      alert("Thank you! I will get back to you soon.");
       event.target.reset();
     } else {
       console.log("Error", data);
-      setResult(data.message);
     }
   };
   return (
@@ -56,24 +53,15 @@ const Footer = () => {
 
       <div className="flex flex-col items-center justify-center gap-2">
         <div className="flex items-center justify-center gap-4 text-[24px]">
-          <a
-            className="social-icon"
-            href="https://github.com/hadao169"
-            target="_blank">
-            <i className="bx bxl-github"></i>
-          </a>
-          <a
-            className="social-icon"
-            target="_blank"
-            href="https://www.linkedin.com/in/ha-dao-a60a13297/">
-            <i className="bx bxl-linkedin"></i>
-          </a>
-          <a
-            className="social-icon"
-            href="https://www.instagram.com/thha1609/"
-            target="_blank">
-            <i className="bx bxl-instagram"></i>
-          </a>
+          {contactLinks.map((link, index) => (
+            <a
+              key={index}
+              className="social-icon"
+              href={link.link}
+              target="_blank">
+              <i className={link.icon}></i>
+            </a>
+          ))}
         </div>
         <p className="text-lg">© 2025 Ha Dao</p>
       </div>

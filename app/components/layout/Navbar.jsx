@@ -2,18 +2,12 @@
 import { useState, useEffect } from "react";
 import MobileMenu from "../MobileMenu";
 import Link from "next/link";
+import navItems from "@/app/assets/navBarLink";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
 
-  const navItems = [
-    { label: "Home", href: "/" },
-    { label: "About me", href: "/#about" },
-    { label: "Projects", href: "/#projects" },
-    { label: "Certificates", href: "/#certificates" },
-    { label: "Contact", href: "/contact" },
-  ];
   useEffect(() => {
     const handleScroll = () => {
       setIsScroll(window.scrollY > 50);

@@ -73,7 +73,7 @@ body {
   background-color: rgb(230, 228, 227);
 }
 
-body::after {
+/* body::after {
   content: "xs";
   position: fixed;
   right: 0;
@@ -112,4 +112,4 @@ body::after {
   body::after {
     content: "2xl";
   }
-}
+} */
