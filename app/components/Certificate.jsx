@@ -2,7 +2,9 @@ import certificates from "../assets/certificate";
 
 const Certificates = () => {
   return (
-    <div className="w-full flex flex-col items-start gap-6 p-4">
+    <div
+      id="certificates"
+      className="w-full flex flex-col items-start gap-6 p-4 scroll-mt-25">
       <h1 className="text-4xl font-semibold self-center md:text-left mb-4">
         Personal Certificates
       </h1>

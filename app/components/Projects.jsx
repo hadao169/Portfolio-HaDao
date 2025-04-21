@@ -18,7 +18,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col items-start gap-6 p-4">
+    <div id="projects" className="w-full flex flex-col items-start gap-6 p-4 scroll-mt-25">
       <h1 className="text-4xl font-semibold self-center md:text-left mb-4">
         My Latest Work
       </h1>

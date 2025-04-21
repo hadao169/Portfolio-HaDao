@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const Header = () => {
+const Hero = () => {
   const [text, setText] = useState("");
   const [text2, setText2] = useState("");
 
@@ -33,7 +33,9 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="w-full mx-auto flex flex-col items-center justify-center text-center gap-6 px-4 pt-30 pb-10 z-40">
+    <div
+      id="hero"
+      className="w-full mx-auto flex flex-col items-center justify-center text-center gap-6 px-4 pt-30 pb-10 z-40">
       <img
         src="/images/profile.png"
         className="w-40 h-40 rounded-full object-cover"
@@ -57,4 +59,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Hero;

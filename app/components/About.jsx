@@ -2,7 +2,7 @@ import { techStacks, techClassName } from "../assets/techStack";
 
 const About = () => {
   return (
-    <div className="w-full flex flex-col gap-6">
+    <div id="about" className="w-full flex flex-col gap-6 scroll-mt-25">
       {/* About Section */}
       <div className="w-full flex flex-col md:flex-row items-center md:items-start justify-between px-4 gap-10 pb-10 z-50">
         <img
