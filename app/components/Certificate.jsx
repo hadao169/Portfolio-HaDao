@@ -4,11 +4,11 @@ const Certificates = () => {
   return (
     <div
       id="certificates"
-      className="w-full flex flex-col items-start gap-6 p-4 scroll-mt-25">
+      className="w-full flex flex-col items-center gap-6 p-4 scroll-mt-25">
       <h1 className="text-4xl font-semibold self-center md:text-left mb-4">
         Personal Certificates
       </h1>
-      <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 w-4/5 mx-auto lg:mx-0 lg:w-full">
+      <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 w-4/5 mx-auto lg:w-4/5">
         {certificates.map((certificate, index) => (
           <div
             key={index}
