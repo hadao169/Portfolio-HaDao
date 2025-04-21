@@ -12,7 +12,7 @@ const Certificates = () => {
         {certificates.map((certificate, index) => (
           <div
             key={index}
-            className="flex flex-col items-center lg:items-start gap-4 mb-4">
+            className="flex flex-col items-center lg:items-center gap-4 mb-4">
             <img
               src={certificate.img}
               className="h-50 w-80 rounded-2xl hover:scale-105 transition duration-300 ease-in-out cursor-pointer"
