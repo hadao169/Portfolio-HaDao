@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import MobileMenu from "../MobileMenu";
+import MobileMenu from "../components/MobileMenu";
 import Link from "next/link";
 import navItems from "@/app/assets/navBarLink";
 
@@ -20,11 +20,12 @@ const Navbar = () => {
     <div>
       <nav
         className={
-          `w-full fixed flex items-center justify-between px-5 lg:px-[6%] xl:px[12%] py-4 z-50 sm:text-sm ` +
+          `w-full fixed flex items-center justify-between px-5 lg:px-[6%] xl:px[12%] py-4 z-50 sm:text-sm` +
           (isScroll ? " bg-zinc-900 opacity-90 backdrop-blur-lg shadow-sm" : "")
         }>
-        <h1 className="text-4xl font-semibold text-white">Ha Dao</h1>
-
+        <Link href="/" className="duration-300">
+          <h1 className="text-4xl font-semibold text-white">Ha Dao</h1>
+        </Link>
         <ul
           className={`hidden md:flex md:text-[14px] lg:text-lg font-semibold md:gap-5 lg:gap-9 rounded-4xl px-6 py-1.5 transition-all ${
             isScroll ? "bg-zinc-700" : ""
