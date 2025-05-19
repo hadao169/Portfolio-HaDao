@@ -1,13 +1,11 @@
 "use client";
 // Components
-import Navbar from "./layout/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import TechStack from "./components/TechStack";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Certificates from "./components/Certificate";
-import Footer from "./layout/Footer";
 
 export default function Home() {
   return (

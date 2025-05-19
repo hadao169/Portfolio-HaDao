@@ -2,6 +2,12 @@
 import "./globals.css";
 import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";
+
+export const metadata = {
+  title: "My Portfolio",
+  description: "Welcome to my personal portfolio website",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -11,9 +17,9 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className={`antialiased leading-6 `}>
+      <body className="antialiased leading-6">
         <Navbar />
-        <main>{children}</main>
+        <main className="min-h-screen">{children}</main>
         <Footer />
       </body>
     </html>
