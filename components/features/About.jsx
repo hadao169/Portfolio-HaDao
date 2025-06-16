@@ -1,4 +1,4 @@
-import { techStacks, techClassName } from "../assets/techStack";
+import { techStacks, techClassName } from "../../app/assets/techStack";
 
 const About = () => {
   return (

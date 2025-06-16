@@ -1,4 +1,4 @@
-import certificates from "../assets/certificate";
+import certificates from "@/app/assets/certificate";
 
 const Certificates = () => {
   return (

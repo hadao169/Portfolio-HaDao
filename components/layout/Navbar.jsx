@@ -1,8 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
-import MobileMenu from "../components/MobileMenu";
 import Link from "next/link";
 import navItems from "@/app/assets/navBarLink";
+import MobileMenu from "../MobileMenu";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);

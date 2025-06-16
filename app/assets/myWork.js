@@ -12,7 +12,7 @@ const myWorks = [
   {
     name: "E-commerce App",
     image: "/images/e-commerce.png", // Make sure this image exists in your public/images folder
-    link: "https://e-commerce-app-roan.vercel.app/",
+    link: "https://e-commerce-website-ebon-ten.vercel.app/",
     description:
       "A modern full-stack e-commerce application with a clean, responsive UI and robust backend services. Features product browsing, search, authentication, cart management, and secure checkout.",
     techs: [

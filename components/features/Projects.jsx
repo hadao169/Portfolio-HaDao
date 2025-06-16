@@ -1,6 +1,6 @@
 "use client";
-import myWorks from "../assets/myWork.js";
-import { techClassName } from "../assets/techStack";
+import myWorks from "@/app/assets/myWork.js";
+import { techClassName } from "@/app/assets/techStack.js";
 import { useState, useEffect } from "react";
 
 const Projects = () => {
@@ -18,7 +18,9 @@ const Projects = () => {
   }, []);
 
   return (
-    <div id="projects" className="w-full flex flex-col items-start gap-6 p-4 scroll-mt-25">
+    <div
+      id="projects"
+      className="w-full flex flex-col items-start gap-6 p-4 scroll-mt-25">
       <h1 className="text-4xl font-semibold self-center md:text-left mb-4">
         My Latest Work
       </h1>

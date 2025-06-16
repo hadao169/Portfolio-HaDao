@@ -1,11 +1,11 @@
 "use client";
 // Components
-import Hero from "./components/Hero";
-import About from "./components/About";
-import TechStack from "./components/TechStack";
-import Projects from "./components/Projects";
-import Education from "./components/Education";
-import Certificates from "./components/Certificate";
+import Hero from "@/components/features/Hero";
+import About from "@/components/features/About";
+import TechStack from "@/components/TechStack";
+import Projects from "@/components/features/Projects";
+import Education from "@/components/features/Education";
+import Certificates from "@/components/features/Certificate";
 
 export default function Home() {
   return (

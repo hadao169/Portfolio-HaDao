@@ -2,7 +2,7 @@ import {
   techStacks,
   techClassName,
   automationTechs,
-} from "../assets/techStack";
+} from "@/app/assets/techStack.js"; // Adjust the import path as needed
 
 const TechStack = () => {
   return (
