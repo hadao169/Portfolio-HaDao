@@ -1,4 +1,4 @@
-import { techStacks, techClassName } from "../../app/assets/techStack";
+import { techStacks, techClassName } from "@/app/assets/techStack";
 
 const About = () => {
   return (
@@ -28,7 +28,7 @@ const About = () => {
           </p>
 
           <a
-            href="/CV_HaDao_SE.pdf"
+            href="/CV_HaDao_SoftwareEngineer.pdf"
             className="w-38 px-4 py-[10px] bg-btn text-white rounded-2xl hover:bg-amber-400 hover:opacity-80 transition-transform duration-300 hover:scale-105 inline-flex items-center gap-2 text-[16px] md:text-[18px]"
             download="CV_HaDao_SoftwareEngineer">
             My resume <i className="bx bx-download text-2xl"></i>

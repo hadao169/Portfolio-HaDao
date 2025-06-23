@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import navItems from "@/app/assets/navBarLink";
-import MobileMenu from "../MobileMenu";
+import MobileMenu from "@/components/MobileMenu";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);

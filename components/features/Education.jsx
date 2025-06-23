@@ -1,5 +1,3 @@
-import React from "react";
-
 const Education = () => {
   return (
     <div className="hidden lg:flex w-full max-w-70 flex-col items-center gap-6 px-4 py-10 bg-[#312f2f9f] rounded-3xl z-20">

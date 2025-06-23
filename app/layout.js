@@ -1,7 +1,9 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import "./globals.css";
-import Navbar from "../components/layout/Navbar";
-import Footer from "../components/layout/Footer";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: "My Portfolio",
@@ -21,6 +23,8 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        <GoogleAnalytics gaID={process.env.NEXT_PUBLIC_GA_ID} />
+        <Analytics />
       </body>
     </html>
   );
