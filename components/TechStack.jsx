@@ -43,7 +43,7 @@ const TechStack = () => {
       {/* Tech Stack */}
       <div className="w-full max-w-[90%]">
         <h3 className="text-lg font-semibold text-white mb-3">
-          Main Tech Stack
+          Software Tech Stack
         </h3>
         <ul className="flex flex-wrap justify-start gap-2 mb-4">
           {techStacks.map((tech, index) => (
@@ -54,7 +54,7 @@ const TechStack = () => {
         </ul>
 
         <h3 className="text-lg font-semibold text-white my-3 border-t-2 border-amber-400 pt-3">
-          Other Engineering Basics
+          Automation Tech Stack
         </h3>
         <ul className="flex flex-wrap justify-start gap-2 mb-4">
           {automationTechs.map((tech, index) => (

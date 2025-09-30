@@ -28,6 +28,8 @@ const automationTechs = [
   "HMI Design",
   "TwinCAT Beckhoff",
   "Siemens TIA Portal",
+  "EPLAN",
+  "SolidEdge",
 ];
 
 const techClassName =

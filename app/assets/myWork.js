@@ -1,6 +1,6 @@
-import next from "next";
-
 const myWorks = [
+
+  // Software Development Projects
   {
     name: "My Portfolio",
     image: "/images/portfolio.png",
@@ -8,6 +8,7 @@ const myWorks = [
     description:
       "Discover my skills, and projects all in one place. This portfolio showcases my journey, creativity, and passion through real-world examples and experiences.",
     techs: ["Next.js", "tailwindcss", "Vercel"],
+    category: "software",
   },
   {
     name: "E-commerce App",
@@ -32,6 +33,7 @@ const myWorks = [
       "Vercel",
       "Render",
     ],
+    category: "software",
   },
   {
     name: "Phonebook",
@@ -47,6 +49,7 @@ const myWorks = [
       "Express.js",
       "Mongoose",
     ],
+    category: "software",
   },
   {
     name: "CountryInfoHub",
@@ -55,6 +58,7 @@ const myWorks = [
     description:
       "A simple webapp with ReactJS to get some basic information about any country in the world.",
     techs: ["React.js", "Render", "Rest-api"],
+    category: "software",
   },
   {
     name: "Blog App",
@@ -70,6 +74,52 @@ const myWorks = [
       "Express.js",
       "Mongoose",
     ],
+    category: "software",
+  },
+
+  // Automation Projects
+  {
+    name: "Dual-Pump Water Tank Control System",
+    image: "/images/water_supply.png", // You'll need to add this image
+    link: "#",
+    description:
+      "PLC-controlled dual-pump system with analog control for water transfer between tanks. Features alternating pump logic, fault detection, and HMI interface for monitoring and control.",
+    techs: [
+      "TIA Portal",
+      "Siemens S7 PLC",
+      "Analog Sensors",
+      "HMI",
+      "Inverter Control",
+    ],
+    category: "automation",
+  },
+  {
+    name: "Identification Station",
+    image: "/images/id-station.png", // You'll need to add this image
+    link: "#",
+    description:
+      "PLC-based identification station using modular logic blocks for material detection and sorting. Features multiple industrial sensors and HMI touchscreen interface for manual/automatic operation.",
+    techs: [
+      "TIA Portal",
+      "Siemens S7-1200 PLC",
+      "HMI Touchscreen",
+      "Industrial Sensors",
+    ],
+    category: "automation",
+  },
+  {
+    name: "Conveyor Station Automation",
+    image: "/images/conveyor.png", // You'll need to add this image
+    link: "#",
+    description:
+      "Automated conveyor system with PLC logic for motor control, cylinder actuators, and safety interlocks. Includes reference run sequence and HMI interface for operation control.",
+    techs: [
+      "TIA Portal",
+      "Siemens S7 PLC",
+      "HMI Touchscreen",
+      "Industrial Automation",
+    ],
+    category: "automation",
   },
 ];
 
