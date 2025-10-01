@@ -102,7 +102,7 @@ const ProjectSection = ({ projects, isMd }) => (
 
 const Projects = () => {
   const [isMd, setIsMd] = useState(false);
-  const [activeCategory, setActiveCategory] = useState("software");
+  const [activeCategory, setActiveCategory] = useState("automation");
 
   // Filter projects by category
   const softwareProjects = myWorks.filter(

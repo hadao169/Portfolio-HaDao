@@ -82,7 +82,7 @@ const myWorks = [
     image: "/images/water_supply.png", // You'll need to add this image
     link: "#",
     description:
-      "PLC-controlled dual-pump system with analog control for water transfer between tanks. Features alternating pump logic, fault detection, and HMI interface for monitoring and control.",
+      "PLC-controlled dual-pump simulation system with analog control for water transfer between tanks. Features alternating pump logic, fault detection, and HMI interface for monitoring and control.",
     techs: [
       "TIA Portal",
       "Siemens S7 PLC",
@@ -117,6 +117,7 @@ const myWorks = [
       "Siemens S7 PLC",
       "HMI Touchscreen",
       "Industrial Automation",
+      "Inductive and Capacitive Sensors",
     ],
     category: "automation",
   },
