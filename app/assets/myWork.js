@@ -1,5 +1,4 @@
 const myWorks = [
-
   // Software Development Projects
   {
     name: "My Portfolio",
@@ -96,7 +95,7 @@ const myWorks = [
   {
     name: "Identification Station",
     image: "/images/id-station.png", // You'll need to add this image
-    link: "#",
+    link: "https://github.com/hadao169/automation-project/tree/main/Id_station",
     description:
       "PLC-based identification station using modular logic blocks for material detection and sorting. Features multiple industrial sensors and HMI touchscreen interface for manual/automatic operation.",
     techs: [
@@ -110,7 +109,7 @@ const myWorks = [
   {
     name: "Conveyor Station Automation",
     image: "/images/conveyor.png", // You'll need to add this image
-    link: "#",
+    link: "https://github.com/hadao169/automation-project/tree/main/conveyor",
     description:
       "Automated conveyor system with PLC logic for motor control, cylinder actuators, and safety interlocks. Includes reference run sequence and HMI interface for operation control.",
     techs: [
