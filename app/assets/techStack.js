@@ -30,6 +30,7 @@ const automationTechs = [
   "Siemens TIA Portal",
   "EPLAN",
   "SolidEdge",
+  "DC Motors",
 ];
 
 const techClassName =

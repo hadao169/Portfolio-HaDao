@@ -54,7 +54,7 @@ const TechStack = () => {
         </ul>
 
         <h3 className="text-lg font-semibold text-white my-3 border-t-2 border-amber-400 pt-3">
-          Automation Tech Stack
+          Automation Technologies
         </h3>
         <ul className="flex flex-wrap justify-start gap-2 mb-4">
           {automationTechs.map((tech, index) => (
