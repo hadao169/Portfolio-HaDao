@@ -6,6 +6,7 @@ import TechStack from "@/components/TechStack";
 import Projects from "@/components/features/Projects";
 import Education from "@/components/features/Education";
 import Certificates from "@/components/features/Certificate";
+import WorkExperience from "@/components/features/WorkExperience";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         {/* Left Section - About + Projects */}
         <div className="left-section flex flex-col lg:w-2/3 items-start justify-start gap-10 py-20 xl:pl-25 px-6 z-30">
           <About />
+          <WorkExperience/>
           <Projects />
           <Certificates />
         </div>
