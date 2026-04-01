@@ -27,12 +27,13 @@ const About = () => {
               <span className="text-white font-medium">
                 Automation Engineering
               </span>{" "}
-              student and{" "}
+              student with hands-on experience in{" "}
               <span className="text-white font-medium">
-                Mobile Robotics Intern
-              </span>{" "}
-              with a focus on{" "}
-              <span className="text-white font-medium">Embedded Systems</span>.
+                industrial automation, robotics, and embedded systems
+              </span>
+              . I have worked on real-world projects involving PLC-based control
+              systems, mobile robotics, and sensor integration, with a strong
+              focus on building reliable and efficient intelligent systems.
             </p>
             <p>
               Currently, I'm gaining hands-on experience in hardware-software
