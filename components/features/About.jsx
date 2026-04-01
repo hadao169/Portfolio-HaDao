@@ -43,13 +43,6 @@ const About = () => {
               efficient autonomous solutions.
             </p>
           </div>
-
-          <a
-            href="/CV_software_engineer_HaDao.pdf"
-            className="mt-2 px-8 py-3 bg-btn text-white font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-300 ease-out hover:-translate-y-1 inline-flex items-center gap-2"
-            download="CV_HaDao_Automation_Robotics">
-            Download CV <i className="bx bx-download text-xl"></i>
-          </a>
         </div>
       </div>
 

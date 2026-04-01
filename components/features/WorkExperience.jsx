@@ -14,6 +14,7 @@ const WorkExperience = () => {
           <div
             key={index}
             className="group w-full flex flex-col md:flex-row items-start gap-6 md:gap-10 bg-[#312f2f9f] p-6 md:p-8 rounded-3xl shadow-lg border border-transparent hover:border-white/10 hover:-translate-y-1 hover:bg-[#3b38389f] transition-all duration-300 ease-out">
+            {/* Left Column: Period, Role, Company */}
             <div className="md:w-1/3 flex flex-col shrink-0">
               <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-3">
                 {exp.period}
@@ -23,17 +24,39 @@ const WorkExperience = () => {
                 {exp.company}
               </h3>
             </div>
-            <div className="md:w-2/3 text-gray-200">
-              {Array.isArray(exp.description) ? (
-                <ul className="list-disc list-outside ml-4 text-[16px] leading-relaxed flex flex-col gap-3">
-                  {exp.description.map((point, idx) => (
-                    <li key={idx} className="pl-1">
-                      {point}
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p className="text-[16px] leading-relaxed">{exp.description}</p>
+
+            {/* Right Column: Description & Feedback */}
+            <div className="md:w-2/3 text-gray-200 flex flex-col gap-6">
+              {/* Job Description List */}
+              <div>
+                {Array.isArray(exp.description) ? (
+                  <ul className="list-disc list-outside ml-4 text-[16px] leading-relaxed flex flex-col gap-3">
+                    {exp.description.map((point, idx) => (
+                      <li key={idx} className="pl-1">
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-[16px] leading-relaxed">
+                    {exp.description}
+                  </p>
+                )}
+              </div>
+
+              {/* Feedback Block - Updated for your new string structure */}
+              {exp.feedback && (
+                <div className="mt-4 p-5 bg-white/5 rounded-2xl border-l-4 border-blue-500 italic relative">
+                  <span className="absolute top-2 right-4 text-4xl text-white/10 font-serif">
+                    "
+                  </span>
+                  <p className="text-[15px] text-gray-300 leading-relaxed">
+                    {exp.feedback}
+                  </p>
+                  <p className="mt-3 text-xs font-semibold text-blue-400 uppercase tracking-wider not-italic">
+                    Supervisor Feedback
+                  </p>
+                </div>
               )}
             </div>
           </div>

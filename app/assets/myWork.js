@@ -11,7 +11,7 @@ const myWorks = [
   },
   {
     name: "E-commerce App",
-    image: "/images/e-commerce.png", // Make sure this image exists in your public/images folder
+    image: "/images/e-commerce.png",
     link: "https://e-commerce-website-ebon-ten.vercel.app/",
     description:
       "A modern full-stack e-commerce application with a clean, responsive UI and robust backend services. Features product browsing, search, authentication, cart management, and secure checkout.",
@@ -78,23 +78,38 @@ const myWorks = [
 
   // Automation Projects
   {
-    name: "Dual-Pump Water Tank Control System",
-    image: "/images/water_supply.png", // You'll need to add this image
-    link: "#",
+    name: "Dual-Pump Water Supply Control System",
+    image: "/images/water_supply.png",
+    link: "https://github.com/hadao169/automation-project/tree/main/water_supply_system",
     description:
-      "PLC-controlled dual-pump simulation system with analog control for water transfer between tanks. Features alternating pump logic, fault detection, and HMI interface for monitoring and control.",
+      "Dual-pump PLC system with SCADA simulation. Alternating pump operation, level control (Tank1/Tank2), 15s dry-run protection, manual/auto modes, web HMI interface.",
     techs: [
       "TIA Portal",
-      "Siemens S7 PLC",
-      "Analog Sensors",
-      "HMI",
-      "Inverter Control",
+      "SCADA Simulation",
+      "PLC Siemens S7-1200",
+      "Sensor Integration",
+    ],
+    category: "automation",
+  },
+  {
+    name: "NC Machine Control System",
+    image: "/images/nc_machine.png",
+    link: "https://github.com/hadao169/automation-project/tree/main/NC_machine",
+    description:
+      "Multi-axis CNC machine with TIA Portal PLC, G-code processing, axis interpolation (X/Y/Z), WinCC SCADA simulation, manual/jog/auto modes, real-time feedrate override.",
+    techs: [
+      "TwinCAT 3",
+      "PLC Motion Control",
+      "G-code Processing",
+      "React.js",
+      "Node.js",
+      "WebSocket",
     ],
     category: "automation",
   },
   {
     name: "Identification Station",
-    image: "/images/id-station.png", // You'll need to add this image
+    image: "/images/id-station.png",
     link: "https://github.com/hadao169/automation-project/tree/main/Id_station",
     description:
       "PLC-based identification station using modular logic blocks for material detection and sorting. Features multiple industrial sensors and HMI touchscreen interface for manual/automatic operation.",
@@ -108,7 +123,7 @@ const myWorks = [
   },
   {
     name: "Conveyor Station Automation",
-    image: "/images/conveyor.png", // You'll need to add this image
+    image: "/images/conveyor.png",
     link: "https://github.com/hadao169/automation-project/tree/main/conveyor",
     description:
       "Automated conveyor system with PLC logic for motor control, cylinder actuators, and safety interlocks. Includes reference run sequence and HMI interface for operation control.",
