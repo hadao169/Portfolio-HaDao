@@ -11,8 +11,8 @@ const Education = () => {
         </h3>
         <p className="text-[17px]">Bachelor of Automation Engineering</p>
         <p className="text-[16px]">2023 - 2026</p>
-        <p className="text-[16px]">Credits: 209/240 ECTS</p>
-        <span>GPA: 4.5/5</span>
+        <p className="text-[16px]">Credits: 248/240 ECTS</p>
+        <span>GPA: 4.62/5</span>
       </div>
     </div>
   );

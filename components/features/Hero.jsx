@@ -48,6 +48,7 @@ const Hero = () => {
       <div className="flex flex-col items-center gap-2 px-4">
         <p className="text-[18px] font-semibold sm:text-[20px] md:text-2xl">
           Bachelor of Automation Engineering | Dive into Software Development
+          and Industrial Automation
         </p>
 
         <p className="text-[16px] md:text-lg md:max-w-[60%] text-white px-10">

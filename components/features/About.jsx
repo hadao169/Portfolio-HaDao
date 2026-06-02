@@ -36,7 +36,7 @@ const About = () => {
               focus on building reliable and efficient intelligent systems.
             </p>
             <p>
-              Currently, I'm gaining hands-on experience in hardware-software
+              I gained hands-on experience in hardware-software
               integration through the{" "}
               <span className="text-amber-400">UGV Panther</span> project,
               working with ROS 2 and various sensor technologies. I'm a

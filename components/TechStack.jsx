@@ -49,34 +49,16 @@ const TechStack = () => {
         {/* Nhóm 1: Core Robotics */}
         <div>
           <h3 className="text-[16px] font-bold text-amber-400 mb-4 flex items-center gap-2 uppercase tracking-wider">
-            <i className="bx bxs-chip"></i> Core Robotics
+            <i className="bx bxs-chip"></i>Robotics and Industrial Automation
           </h3>
           <ul className="flex flex-wrap justify-start gap-2">
-            {["ROS 2", "C++", "Python", "Sensors Integration"].map((tech) => (
+            {automationTechs.map((tech, index) => (
               <li
-                key={tech}
+                key={index}
                 className={`${techClassName} border border-amber-400/40 bg-amber-400/10 text-white font-bold`}>
                 {tech}
               </li>
             ))}
-            {automationTechs
-              .filter(
-                (t) =>
-                  ![
-                    "ROS 2",
-                    "C++",
-                    "Python",
-                    "Sensors Integration",
-                    "Microcontrollers",
-                    "PLC",
-                    "System Calibration",
-                  ].includes(t),
-              )
-              .map((tech, index) => (
-                <li key={index} className={techClassName}>
-                  {tech}
-                </li>
-              ))}
           </ul>
         </div>
 
@@ -86,7 +68,7 @@ const TechStack = () => {
             <i className="bx bx-unite"></i> Control & Hardware
           </h3>
           <ul className="flex flex-wrap justify-start gap-2">
-            {["Microcontrollers", "PLC", "System Calibration"].map((tech) => (
+            {["Microcontrollers", "Lidars", "IMU", "RGB Camera"].map((tech) => (
               <li
                 key={tech}
                 className={`${techClassName} border border-amber-400/40 bg-amber-400/10 text-white font-bold`}>
