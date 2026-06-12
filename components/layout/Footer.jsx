@@ -6,7 +6,7 @@ const Footer = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "5e92a25b-0edc-4b7e-8848-d62f4597fb4a");
+    formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_KEY);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
